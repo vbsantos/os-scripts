@@ -29,7 +29,7 @@ if not "!repoURL!"=="!repoURL:github=!" (
     set "provider=GitHub"
     set "webURL=!repoURL:.git=!"
     if "!repoURL!"=="!repoURL:https=!" (
-        set "webURL=!webURL:git@github=!"
+        set "webURL=!webURL:git@github.com:=!"
         set "webURL=https://github.com/!webURL!"
     )
 ) else if not "!repoURL!"=="!repoURL:gitlab=!" (
